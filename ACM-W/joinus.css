@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppons:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: century-gothic, sans-serif;
+}
+
+body {
+    display: flex;
+    background: #ebe9e9; /* Background color */
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113, 99, 186, 255);
+}
+
+.sidebar:hover {
+    width: 240px;
+    transition: 0.5s;
+}
+
+.logo {
+    width: 100px; 
+    height: 100px; 
+}
+
+.menu {
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 150px 0;
+}
+
+.menu li {
+    padding: 1rem;
+    margin: 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover,
+.active {
+    background: #e0e0e058;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu a span {
+    overflow: hidden;
+}
+
+.menu a i {
+    font-size: 1.2rem;
+}
+
+.main--content {
+    position: relative;
+    background: #ebe9e9;
+    width: 100%;
+    padding: 1rem;
+}
+
+.header--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+}
+
+.header--title {
+    color: rgba(113, 99, 186, 255);
+    text-align: center;
+}
+
+#main--content--club h2 {
+    font-size: 30px;
+    color: #0bb9f8;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+#main--content--club p {
+    font-size: 17px;
+    margin-left: 10px;
+}
+
+.qrcode {
+    width: 100px; /* Set the desired width */
+    height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
+}
+
+.search--box {
+    background: rgb(237, 237, 237);
+    border-radius: 15px;
+    color: rgba(113, 99, 186, 255);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+
+.search--box input {
+    background: transparent;
+    padding: 10px;
+}
+
+.search--box i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.search--box i:hover {
+    transform: scale(1.2);
+}
+
+.social-icons {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.menu-toggle{
+    display: none;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 99px;
+    background-color: #2e3047;
+    cursor: pointer;
+}
+
+.hamburger {
+    position: relative;
+    top: calc(50% - 2px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+}
+
+.hamburger > span,
+.hamburger > span::before,
+.hamburger > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 99px;
+  background-color: #FFF;
+  transition-duration: .25s;
+}
+
+.hamburger > span::before {
+  content: '';
+  top: -8px;
+}
+.hamburger > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu-toggle.is-active .hamburger > span {
+  transform: rotate(45deg);
+}
+.menu-toggle.is-active .hamburger > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+.menu-toggle.is-active .hamburger > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+
+/* RESPONSIVE DESIGN */
+@media(max-width: 992 px){
+        .sidebar{
+            max-width: 200px;
+        }
+ }
+
+ @media(max-width: 768px) {
+    .menu-toggle{
+        display: block;
+    }
+
+    .main--content{
+        padding-top: 8rem;
+    }
+
+    .sidebar{
+        position: fixed;
+        top: 0;
+        left: -300px;
+        height: 100vh;
+        width: 100%;
+        max-width: 300px;
+        transition: 0.2s linear;
+        z-index: 1000;
+    }
+
+    .sidebar.is-active {
+        left: 0;
+    }
+ }

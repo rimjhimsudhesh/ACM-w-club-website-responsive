@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UWB ACM-W</title>
+    <link rel="stylesheet" href="joinus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <ul class="menu">
+            <li>
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="upcomingevents.html">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>Upcoming Events</span>
+                </a>
+            </li>
+            <li>
+                <a href="joinus.html">
+                    <i class="fa-solid fa-handshake"></i>
+                    <span>Join Us</span>
+                </a>
+            </li>
+            <li>
+                <a href="aboutus.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span>The Team</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main--content">
+        <div class="header--wrapper">
+            <img src="ACM-W_Logo.png" alt="ACM-W Logo" class="logo" />
+            <div class="header--title">
+                <span style="font-size: 24px;">University of Washington Bothell</span>
+                <h2 style="font-size: 20px;">ACM-W</h2>
+
+            </div>
+            <div class="info">
+                <div class="search--box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Search" />
+                </div>
+            </div>
+        </div>
+
+        <div id="main--content--club">
+            <h2>Join UWB ACM-W</h2>
+            
+            <p>Why join UWB Association for Computing Machinary Women's Chapter?</p>
+
+            <p>
+                Joining the UWB Association for Computing Machinery (ACM) Women's Chapter presents a unique opportunity to thrive 
+                in the dynamic world of computing. By becoming a member, you open doors to a vibrant network of peers, mentors, and 
+                industry professionals, fostering connections that can profoundly shape your academic and professional journey. 
+                The chapter offers an array of enriching experiences, from skill-enhancing workshops and seminars to hackathons and 
+                coding competitions, providing practical avenues for honing your technical expertise. Moreover, you'll find a supportive 
+                community dedicated to empowering women in computing, fostering inclusivity, and bridging the gender gap in technology. 
+                Through this chapter, you'll not only gain access to invaluable resources and leadership opportunities but also find 
+                friendship, inspiration, and a sense of belonging, making your computing education a truly enriching and fulfilling experience.
+            </p>
+
+            <hr>
+
+            <!-- <p>
+                Please join our Discord with the following link:
+            </p> -->
+            <p>
+                Join us on <a href="https://www.instagram.com/uwb_acmw/" target="_blank">Instagram</a>
+
+            </p>
+            <!-- <a href="https://www.instagram.com/uwb_acmw/">Instagram</a> -->
+            <!-- <img src="instaQR.png" alt="Instagram QR" class="qrcode"/> -->
+            <p>
+                Join us on <a href="https://uwb.presence.io/organization/acm-w" target="_blank">Presence</a>
+            </p>
+            <!-- <a href="https://uwb.presence.io/organization/acm-w">Presence</a> -->
+            <!-- <img src="presenceQR.png" alt="Presence QR" class="qrcode" /> -->
+
+
+        </div>
+    </div>
+
+    <div class="menu-toggle">
+        <div class = "hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const sidebar = document.querySelector('.sidebar');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('is-active');
+            sidebar.classList.toggle('is-active');
+        });
+    </script>
+
+    <!-- 
+        icons in footer for links to social media?
+
+        <div class="social-icons">
+        <a href="https://www.instagram.com/uwb_acmw/" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://uwb.presence.io/organization/acm-w" target="_blank">
+            <i class="fas fa-link"></i>
+        </a>
+    </div>
+    <script src=""></script> -->
+</body>
+
+</html>
+
